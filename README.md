@@ -6,7 +6,7 @@ Bienvenue sur le dépôt de **Chat'Bruti**, une application de chat développée
 
 La Nuit de l'Info est une compétition nationale qui réunit étudiants, enseignants et entreprises pour un défi de programmation intense. Du coucher du soleil au lever du soleil, les équipes doivent développer une application web complète en relevant divers défis techniques et créatifs.
 
-**Édition 2025** : Cette année, les participants s'affrontent sur un thème national (à compléter une fois annoncé/connu) tout en intégrant des fonctionnalités innovantes et décalées.
+**Édition 2025** : Cette année, les participants s'affrontent sur un thème national NIRD tout en intégrant des fonctionnalités innovantes et décalées.
 
 ## 🤖 À propos de Chat'Bruti
 
