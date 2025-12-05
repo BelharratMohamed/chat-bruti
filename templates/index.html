@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat'Bruti</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <button class="new-chat-btn">
+                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                Nouveau chat
+            </button>
+            <div class="history-list" id="history-list">
+                <!-- History items will be added here dynamically -->
+            </div>
+            <div class="sidebar-footer">
+                <!-- Future settings or user info could go here -->
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="model-selector">Chat'Bruti</div>
+                <button id="theme-toggle" class="theme-toggle" title="Mode sombre/clair">
+                    <!-- Sun Icon (for dark mode) -->
+                    <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                    </svg>
+                    <!-- Moon Icon (for light mode) -->
+                    <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="chat-window" id="chat-window">
+                <!-- Welcome screen -->
+                <div class="welcome-container" id="welcome-container">
+                    <div class="logo">CB</div>
+                    <h1>Chat'Bruti</h1>
+                    <div class="example-prompts">
+                        <div class="prompt">"Quelle heure est-il ?"</div>
+                        <div class="prompt">"Raconte-moi une histoire"</div>
+                        <div class="prompt">"Pourquoi le ciel est bleu ?"</div>
+                    </div>
+                </div>
+                <!-- Messages will be dynamically added here -->
+            </div>
+
+            <div class="input-area-container">
+                <div class="input-area">
+                    <form class="chat-input-form" id="chat-form">
+                        <textarea id="message-input" placeholder="Envoyer un message..." rows="1"></textarea>
+                        <button type="submit" id="send-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                            </svg>
+                        </button>
+                    </form>
+                    <p class="footer-text">Chat'Bruti peut faire des erreurs. Envisagez de vérifier les informations
+                        importantes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

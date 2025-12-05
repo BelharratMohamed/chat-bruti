@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+instance/
+
+# Local utility scripts with secrets
+debug_remote.py
+deploy.py
+inspect_remote.py
+fix_deploy.py
+fix_session.py

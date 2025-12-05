@@ -1,0 +1,22 @@
+Initializing OpenAI client for HF Router (Qwen/Qwen2.5-72B-Instruct)...
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [05/Dec/2025 01:56:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 01:56:39] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Dec/2025 01:56:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Dec/2025 01:56:39] "GET /history HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 01:56:47] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 01:56:47] "GET /history HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 01:56:51] "POST /reset HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 01:56:51] "GET /history HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 01:56:52] "GET /load_chat/d4c885ee-6a7b-4170-96ad-8f7e61f4d173 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 01:56:52] "GET /history HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 01:56:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 01:56:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Dec/2025 01:56:55] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [05/Dec/2025 01:56:55] "GET /history HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 01:57:05] "POST /chat HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 01:57:05] "GET /history HTTP/1.1" 200 -
