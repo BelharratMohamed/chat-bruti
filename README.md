@@ -54,5 +54,32 @@ Pour tester Chat'Bruti localement, suivez ces étapes :
 -   **Frontend** : HTML5, CSS3, JavaScript (Vanilla)
 -   **IA** : OpenAI API (pour la génération de texte avancée)
 
+## 🧠 Fonctionnement Technique
+
+Chat'Bruti utilise une architecture sophistiquée pour garantir à la fois la pertinence et l'humour :
+
+### 1. L'API Hugging Face
+Nous utilisons l'API d'inférence de Hugging Face (compatible OpenAI) pour accéder à des modèles de langage performants comme `Qwen/Qwen2.5-72B-Instruct`. Cela nous permet d'avoir une intelligence de haut niveau sans gérer l'infrastructure lourde.
+
+### 2. La Stratégie du "Double Prompting"
+Pour obtenir ce ton unique "brut de décoffrage", chaque réponse est générée en deux temps :
+
+1.  **Phase 1 : La Vérité (Factualité)**
+    *   Nous demandons d'abord au modèle d'être un "assistant utile et précis".
+    *   *Objectif* : Obtenir une réponse correcte et fiable à la question de l'utilisateur.
+
+2.  **Phase 2 : La Bêtise (Personnalité)**
+    *   Nous réinjectons la réponse factuelle dans un second prompt avec une instruction de style : *"Tu es Chat'Bruti... reformule la réponse... sois direct mais absurde."*
+    *   *Objectif* : Transformer l'information brute en une réponse drôle, sarcastique ou décalée, tout en gardant le fond.
+
+## 📄 Licence
+
+Ce projet est sous licence **MIT**. Vous êtes libre de le modifier et de le distribuer.
+
+### Crédits et Licences Tierces
+-   **Flask** : BSD-3-Clause
+-   **OpenAI Python Client** : Apache 2.0
+-   **Paramiko** : LGPL 2.1
+
 ## 👥 L'Équipe
 Développé avec ❤️ (et beaucoup de café) par l'équipe 404 Not Found !.
